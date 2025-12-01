@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="Home Page.css">
+     <script defer src="trans.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <img src="Img/Logo.png" alt="Decorative Image"class="logo">
+        <h1>K.A.M Innovations</h1>
+
+        <nav>
+            <a href="#Home-Page" class="btn  d">Home</a>
+             <a href="#tools" class="btn  d">Tools we use</a>
+            <a href="#About-us" class="btn  d">About Us</a>
+            <a href="#contact-section" class="btn  d">Contact Us</a>
+        </nav>
+    </header>
+
+      <video autoplay muted loop playsinline class="bg-video">
+            <source src="video/underwaterlabs.webm" type="video/mp4">
+        </video>
+
+    <section class="Home-Page" id="Home-Page">
+
+      
+
+        <h2>Welcome to Our Group Portfolio</h2>
+        <p>We are Mary, Kent, and Almie — a passionate team dedicated to creating visually stunning and meaningful projects. Explore our works below.</p>
+       
+     
+
+        <button class="about-btn" onclick="toggleSlide()">About our Team</button>
+
+        <section>
+                <div id="aboutSlide" class="slide-box">
+                     <div id="sidePanel">
+                        <img src="Images/Team picture.jpg" alt="Our Team" class="team-photo">
+
+                        <h2>About Our Team</h2>
+                        <p class="desc">
+                            We are Mary, Kent, and Almie — a dedicated group passionate about modern design,
+                            creative ideas, and building projects that combine technology with innovation.
+                            Our teamwork, unique skills, and commitment to quality make us strive for
+                            excellence in every project we create.
+                        </p>
+
+                        <h3>Our Vision</h3>
+                        <p class="vision">
+                            To become a forward-thinking team that creates meaningful digital solutions
+                            and inspires future developers through creativity and innovation.
+                        </p>
+
+                        <h3>Our Mission</h3>
+                        <p class="mission">
+                            To continuously learn, collaborate, and develop projects that blend functionality
+                            with great design, while promoting innovation in future technologies.
+                        </p>
+                                <button class="close-btn" onclick="toggleSlide()">Close</button>
+                    </div>
+        
+                </div>
+        </section>
+    
+
+    </section>
+   
+
+
+     <h2>About Us</h2>
+    <section class="Banner-list" id="About-us">
+       <div class="container">
+      
+        <div class="banner-box">
+            <img src="Images/kent.jpg" alt="Project Manager">
+            <h3>Project Manager <br>Kent John Ga</h3>
+            <button class="info-btn" onclick="toggleInfo('pm-info')">View Portfolio</button>
+            <div id="pm-info" class="portfolio-info" style="display: none;">
+                <p>Experienced Project Manager with 5+ years in leading cross-functional teams. Skilled in Agile methodologies, risk management, and stakeholder communication. Portfolio highlights include successful delivery of software projects for tech startups.</p>
+                <div class="screenshots">
+                    <img src="pm_project1_screenshot.jpg" alt="Project 1 Screenshot">
+                    <img src="pm_project2_screenshot.jpg" alt="Project 2 Screenshot">
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="banner-box">
+            <img src="Images/mary.jpg" alt="UI/UX Designer">
+            <h3>UI/UX Designer <br>Mary Antonette Orlido</h3>
+            <button class="info-btn" onclick="toggleInfo('ux-info')">View Portfolio</button>
+            <div id="ux-info" class="portfolio-info" style="display: none;">
+                <p>Creative UI/UX Designer specializing in user-centered design. Proficient in tools like Figma, Adobe XD, and prototyping. Portfolio features award-winning app designs and website redesigns for e-commerce brands.</p>
+                <div class="screenshots">
+                    <img src="ux_design1_screenshot.jpg" alt="Design 1 Screenshot">
+                    <img src="ux_design2_screenshot.jpg" alt="Design 2 Screenshot">
+                    <img src="ux_design3_screenshot.jpg" alt="Design 3 Screenshot">
+                </div>
+            </div>
+        </div>
+
+       
+        <div class="banner-box">
+            <img src="Images/almie.jpg" alt="Content Creator">
+            <h3>Content Creator <br>Almie Jane Yanguas</h3>
+            <button class="info-btn" onclick="toggleInfo('cc-info')">View Portfolio</button>
+            <div id="cc-info" class="portfolio-info" style="display: none;">
+                <p>Dynamic Content Creator with expertise in video production, social media strategy, and storytelling. Over 100K followers across platforms. Portfolio includes viral campaigns, tutorials, and branded content for influencers and businesses.</p>
+                <div class="screenshots">
+                    <img src="cc_content1_screenshot.jpg" alt="Content 1 Screenshot">
+                    <img src="cc_content2_screenshot.jpg" alt="Content 2 Screenshot">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+       <h2>Tools We Use</h2>
+    <div class="tools-banner" id="tools">
+       
+        <div class="tool-card">
+            <img src="Images/html.png" alt="HTML Icon">
+            <h4>HTML</h4>
+        </div>
+        <div class="tool-card">
+            <img src="Images/css.png" alt="CSS Icon">
+            <h4>CSS</h4>
+        </div>
+        <div class="tool-card">
+            <img src="Images/vs2.webp" alt="VS Code Icon">
+            <h4>VS Code</h4>
+        </div>
+        <div class="tool-card">
+            <img src="Images/git.png" alt="Github & Git Icon">
+            <h4>Github & Git</h4>
+        </div>
+        <div class="tool-card">
+            <img src="Images/var.png" alt="Vercel Icon">
+            <h4>Vercel</h4>
+        </div>
+    </div>
+
+
+     <div class="contact-section" id="contact-section">
+        <h2>Contact Us</h2>
+        <div class="contact-cards">
+         
+            <div class="business-card">
+                <img src="Images/kent.jpg" alt="Project Manager">
+                <h3>Project Manager</h3>
+                <p>Email: pm@example.com</p>
+                <p>Phone: +1 (123) 456-7890</p>
+                <form class="email-form" onsubmit="sendEmail(event, 'pm@example.com')">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit" class="send-btn">Send Email</button>
+                </form>
+            </div>
+
+           
+            <div class="business-card">
+                <img src="Images/mary.jpg" alt="UI/UX Designer">
+                <h3>UI/UX Designer</h3>
+                <p>Email: ux@example.com</p>
+                <p>Phone: +1 (123) 456-7891</p>
+                <form class="email-form" onsubmit="sendEmail(event, 'ux@example.com')">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit" class="send-btn">Send Email</button>
+                </form>
+            </div>
+
+           
+            <div class="business-card">
+                <img src="Images/almie.jpg" alt="Content Creator">
+                <h3>Content Creator</h3>
+                <p>Email: cc@example.com</p>
+                <p>Phone: +1 (123) 456-7892</p>
+                <form class="email-form" onsubmit="sendEmail(event, 'cc@example.com')">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit" class="send-btn">Send Email</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="email-sent-overlay" class="overlay" style="display: none;">
+        <div class="sent-message">
+            <div class="envelope">✉️</div>
+            <p>Email Sent!</p>
+        </div>
+    </div>
+        
+
+      
+    </section>
+
+   
+
+        <footer style="background:#20232a; color:#bbb; padding:1rem 2rem; text-align:center; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 0.9rem; margin-top: 3rem;">
+  <p>Created and developed by <strong>Kent John Ga</strong>With the Assistance of <strong>Mary Antonette Orlido</strong>&<strong>Almie Jane Yanguas</strong></p>
+  <p>© 2025 All rights reserved.</p>
+  <p style="font-size: 0.8rem; color: #888;">
+    This Development was Assisted by my team with AI tools we Intigrated in our develompent: ChatGPT, Copilot, BlackboxAI.<br />
+    Created in VSCode Studio.
+  </p>
+    </footer>
+</body>
+</html>
